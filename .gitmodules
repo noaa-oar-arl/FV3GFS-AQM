@@ -10,3 +10,7 @@
 	path = AQM
 	url = gerrit:AQM
 	branch = development
+[submodule "FMS"]
+	path = FMS
+	url = git://github.com/NOAA-EMC/FMS
+	branch = GFS-FMS

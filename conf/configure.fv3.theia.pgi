@@ -51,6 +51,7 @@ VERBOSE =
 OPENMP = Y
 AVX2 = Y
 HYDRO = N
+CCPP = N
 
 include       $(ESMFMKFILE)
 ESMF_INC    = $(ESMF_F90COMPILEPATHS)
@@ -90,6 +91,10 @@ else
 CPPDEFS += -DMOIST_CAPPA -DUSE_COND
 endif
 
+ifeq ($(NAM_phys),Y)
+CPPDEFS += -DNAM_phys
+endif
+
 ifeq ($(32BIT),Y)
 CPPDEFS += -DOVERLOAD_R4 -DOVERLOAD_R8
 FFLAGS += -i4 -r4
@@ -98,21 +103,11 @@ FFLAGS += -i4 -r8 -Mfprelaxed=div -Mfprelaxed=sqrt
 endif
 
 ifeq ($(AVX2),Y)
-ifeq ($(32BIT),Y)
 FFLAGS += -tp=haswell
 CFLAGS += -tp=haswell
 else
-FFLAGS += -tp=haswell-64
-CFLAGS += -tp=haswell-64
-endif
-else
-ifeq ($(32BIT),Y)
-FFLAGS += -tp=ivybridge
-CFLAGS += -tp=ivybridge
-else
-FFLAGS += -tp=ivybridge-64
-CFLAGS += -tp=ivybridge-64
-endif
+FFLAGS += -tp=x64
+CFLAGS += -tp=x64
 endif
 
 FFLAGS_OPT = -O1
@@ -161,6 +156,7 @@ FAST := $(TRANSCENDENTALS)
 endif
 
 ifeq ($(OPENMP),Y)
+CPPDEFS += -DOPENMP
 CFLAGS += $(CFLAGS_OPENMP)
 FFLAGS += $(FFLAGS_OPENMP)
 LDFLAGS += $(LDFLAGS_OPENMP)
@@ -170,6 +166,13 @@ ifeq ($(VERBOSE),Y)
 CFLAGS += $(CFLAGS_VERBOSE)
 FFLAGS += $(FFLAGS_VERBOSE)
 LDFLAGS += $(LDFLAGS_VERBOSE)
+endif
+
+ifeq ($(CCPP),Y)
+CPPDEFS += -DCCPP
+CFLAGS += -I$(PATH_CCPP)/include
+FFLAGS += -I$(PATH_CCPP)/include
+LDFLAGS += -L$(PATH_CCPP)/lib -lccpp
 endif
 
 LDFLAGS += $(LIBS)

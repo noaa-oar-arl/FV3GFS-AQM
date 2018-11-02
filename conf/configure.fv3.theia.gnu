@@ -54,6 +54,7 @@ VERBOSE =
 OPENMP = Y
 AVX2 = Y
 HYDRO = N
+CCPP = N
 
 include       $(ESMFMKFILE)
 ESMF_INC    = $(ESMF_F90COMPILEPATHS)
@@ -91,6 +92,10 @@ ifeq ($(HYDRO),Y)
 CPPDEFS +=
 else
 CPPDEFS += -DMOIST_CAPPA -DUSE_COND
+endif
+
+ifeq ($(NAM_phys),Y)
+CPPDEFS += -DNAM_phys
 endif
 
 ifeq ($(32BIT),Y)
@@ -154,6 +159,7 @@ FAST := $(TRANSCENDENTALS)
 endif
 
 ifeq ($(OPENMP),Y)
+CPPDEFS += -DOPENMP
 CFLAGS += $(CFLAGS_OPENMP)
 FFLAGS += $(FFLAGS_OPENMP)
 LDFLAGS += $(LDFLAGS_OPENMP)
@@ -163,6 +169,13 @@ ifeq ($(VERBOSE),Y)
 CFLAGS += $(CFLAGS_VERBOSE)
 FFLAGS += $(FFLAGS_VERBOSE)
 LDFLAGS += $(LDFLAGS_VERBOSE)
+endif
+
+ifeq ($(CCPP),Y)
+CPPDEFS += -DCCPP
+CFLAGS += -I$(PATH_CCPP)/include
+FFLAGS += -I$(PATH_CCPP)/include
+LDFLAGS += -L$(PATH_CCPP)/lib -lccpp
 endif
 
 LDFLAGS += $(LIBS)
