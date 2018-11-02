@@ -2984,7 +2984,7 @@ test cpld_fv3_aqm_between: fv3_aqm.exe {
     # Specify input files.
     filters input {
       #    WORK FILE  <=filter=   SOURCE FILE
-          'input.nml' <=atparse=  "@[PARMnems]/input.nml.IN"
+          'input.nml' <=atparse=  "@[PARMnems]/aqm.nml.IN"
     'model_configure' <=atparse=  "@[PARMnems]/model_configure.IN"
                  'aerosol.dat' <=copyfrom= "@[FV3_input_data]/INPUT"
   'co2historicaldata_201*.txt' <=copyfrom= "@[FV3_input_data]/INPUT"
