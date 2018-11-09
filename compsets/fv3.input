@@ -2995,6 +2995,7 @@ test cpld_fv3_aqm_between: fv3_aqm.exe {
            '*configure' <=copyfrom= "@[FV3_input_data]"
                 'INPUT' <=copy=     "@[FV3_input_data]/INPUT"
   'global_o3prdlos.f77' <=copy= "@[FV3_input_data]/INPUT/global_o3prdlos.f77"
+          'field_table' <=copy=     "@[PARMnems]/aqm_field_table"
        'nems.configure' <=atparse=  "@[PARMnems]/nems.configure.@[nems_configure].IN"
     }
 

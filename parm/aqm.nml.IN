@@ -26,7 +26,7 @@
 
 &fms_nml
        clock_grain = 'ROUTINE',
-       domains_stack_size = 3000000,
+       domains_stack_size = 12000000,
        print_memory_usage = .false.
 /
 
@@ -258,6 +258,7 @@
   tr_matrix_nml = "/scratch4/BMC/esmf/Raffaele.Montuoro/dev/nems/dev/aqm/epa/data/Species_Table_TR_0.nml",
   csqy_data     = "/scratch4/BMC/esmf/Raffaele.Montuoro/dev/nems/dev/aqm/epa/data/CSQY_DATA_cb6r3_ae6_aq",
   optics_data   = "/scratch4/BMC/esmf/Raffaele.Montuoro/dev/nems/dev/aqm/epa/data/PHOT_OPTICS.dat",
+  omi           = "/scratch4/BMC/esmf/Raffaele.Montuoro/dev/nems/dev/aqm/epa/data/omi_cmaq_2015_361X179.dat",
   ctm_photodiag = .false.,
   ctm_pmdiag    = .false.,
   ctm_depvfile  = .false.,
