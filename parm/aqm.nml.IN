@@ -259,6 +259,7 @@
   csqy_data     = "/scratch4/BMC/esmf/Raffaele.Montuoro/dev/nems/dev/aqm/epa/data/CSQY_DATA_cb6r3_ae6_aq",
   optics_data   = "/scratch4/BMC/esmf/Raffaele.Montuoro/dev/nems/dev/aqm/epa/data/PHOT_OPTICS.dat",
   omi           = "/scratch4/BMC/esmf/Raffaele.Montuoro/dev/nems/dev/aqm/epa/data/omi_cmaq_2015_361X179.dat",
+  aqm_mp        = 99,
   ctm_photodiag = .false.,
   ctm_pmdiag    = .false.,
   ctm_depvfile  = .false.,
