@@ -37,4 +37,5 @@ run fv3_stretched_nest_debug    @ fv3, standard,           plat==theia.intel
 
 run fv3_NAM_phys                @ fv3, standard, baseline, plat==theia.intel
 
-run cpld_fv3_aqm_between        @ fv3, coupledapp, aqm, plat==theia.intel
+run cpld_fv3_aqm_between               @ fv3, coupledapp, aqm,        plat==theia.intel
+run cpld_fv3_gfdlmp_aqm_between        @ fv3, coupledapp, aqm_gfdlmp, plat==theia.intel
