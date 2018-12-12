@@ -1165,6 +1165,11 @@
            "longname",  "LV_PCSOG"
            "units",     "ppmV"
            "profile_type", "fixed", "surface_value=1.e-7" /
+# prognostic UNKNOWN mixing ratio tracer
+ "TRACER", "atmos_mod", "UNKNOWN"
+           "longname",  "UNKNOWN"
+           "units",     "ppmV"
+           "profile_type", "fixed", "surface_value=1.e-7" /
 # non-prognostic cloud amount
  "TRACER", "atmos_mod", "cld_amt"
            "longname",     "cloud amount"
