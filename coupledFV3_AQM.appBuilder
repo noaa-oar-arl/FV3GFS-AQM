@@ -4,5 +4,8 @@
 
 COMPONENTS=( AQM FMS FV3 )
 
+# set maximum number of tracers in FMS
+FMS_MAKEOPT="FPPFLAGS=-\"DMAXFIELDS_=250 -DMAX_TRACER_FIELDS_=250\""
+
 # The modules.nems and configure.nems are selected by
 # conf/before_appbuilder_file.mk.
