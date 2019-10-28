@@ -38,7 +38,7 @@ endif
 FC = ftn
 CC = cc
 CXX = CC
-LD = ftn -mkl=sequential
+LD = ftn
 
 #########
 # flags #
