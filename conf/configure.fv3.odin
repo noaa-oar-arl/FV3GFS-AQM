@@ -81,9 +81,9 @@ CFLAGS := $(INCLUDE)
 FFLAGS := $(INCLUDE) -fno-alias -auto -safe-cray-ptr -ftz -assume byterecl -nowarn -sox -align array64byte
 
 ifeq ($(HYDRO),Y)
-CPPDEFS += -Duse_libMPI -Duse_netCDF -DSPMD -DUSE_LOG_DIAG_FIELD_INFO -Duse_LARGEFILE -DUSE_GFSL63 -DGFS_PHYS -Duse_WRTCOMP
+CPPDEFS += -Duse_libMPI -Duse_netCDF -DSPMD -DUSE_LOG_DIAG_FIELD_INFO  -DUSE_GFSL63 -DGFS_PHYS -Duse_WRTCOMP
 else
-CPPDEFS += -Duse_libMPI -Duse_netCDF -DSPMD -DUSE_LOG_DIAG_FIELD_INFO -Duse_LARGEFILE -DUSE_GFSL63 -DGFS_PHYS -DMOIST_CAPPA -DUSE_COND -Duse_WRTCOMP
+CPPDEFS += -Duse_libMPI -Duse_netCDF -DSPMD -DUSE_LOG_DIAG_FIELD_INFO  -DUSE_GFSL63 -DGFS_PHYS -DMOIST_CAPPA -DUSE_COND -Duse_WRTCOMP
 endif
 
 CPPDEFS += -DNEW_TAUCTMAX -DINTERNAL_FILE_NML
@@ -98,8 +98,12 @@ endif
 FFLAGS += -xCORE-AVX-I #-axavx 
 CFLAGS += -xCORE-AVX-I #-axavx 
 
+ifeq ($(MULTI_GASES),Y)
+CPPDEFS += -DMULTI_GASES
+endif
+
 FFLAGS_OPT = -O2 -debug minimal -fp-model source -qoverride-limits -qopt-prefetch=3
-FFLAGS_REPRO = -O2 -debug minimal -fp-model source -qoverride-limits -g -traceback
+FFLAGS_REPRO = -O2 -debug minimal -fp-model consistent -qoverride-limits -g -traceback
 #FFLAGS_DEBUG = -g -O0 -check bounds -check -check noarg_temp_created -check nopointer -warn -warn noerrors -fp-stack-check -fstack-protector-all -fpe0 -debug -traceback -ftrapuv
 FFLAGS_DEBUG = -g -O0 -check bounds -traceback 
 

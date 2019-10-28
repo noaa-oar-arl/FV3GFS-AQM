@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eux
 
 SECONDS=0
 
@@ -10,18 +11,35 @@ if [[ $# -lt 2 ]]; then
 fi
 
 # ----------------------------------------------------------------------
+# Parse arguments.
+
+readonly PATHTR=$1
+readonly BUILD_TARGET=$2
+readonly MAKE_OPT=${3:-}
+readonly BUILD_NAME=fv3${4:+_$4}
+
+readonly clean_before=${5:-YES}
+readonly clean_after=${6:-YES}
+
+hostname
+
+# ----------------------------------------------------------------------
+
+echo "Compiling ${MAKE_OPT} into $BUILD_NAME.exe on $BUILD_TARGET"
+
+# ----------------------------------------------------------------------
 # Make sure we have a "make" and reasonable threads.
 
 gnu_make=gmake
 if ( ! which $gnu_make ) ; then
     echo WARNING: Cannot find gmake in \$PATH.  I will use \"make\" instead.
     gnu_make=make
-    if ( ! $gnu_make --version 2>&1 | grep -i gnu > /dev/null 2>&1 ) ; then 
+    if ( ! $gnu_make --version 2>&1 | grep -i gnu > /dev/null 2>&1 ) ; then
        echo WARNING: The build system requires GNU Make. Things may break.
     fi
 fi
 
-if [[ $BUILD_TARGET == cheyenne.* ]] ; then
+if [[ $BUILD_TARGET == cheyenne.* || $BUILD_TARGET == stampede.* ]] ; then
     MAKE_THREADS=${MAKE_THREADS:-3}
 fi
 
@@ -34,26 +52,6 @@ if [[ "$MAKE_THREADS" -gt 1 ]] ; then
 fi
 
 # ----------------------------------------------------------------------
-# Parse arguments.
-
-set -xeu
-
-readonly PATHTR=$1
-readonly BUILD_TARGET=$2
-readonly MAKE_OPT=${3:-}
-readonly BUILD_NAME=fv3${4:+_$4}
-
-clean_before=${5:-YES}
-clean_after=${6:-YES}
-
-#set +x
-hostname
-
-# ----------------------------------------------------------------------
-
-echo "Compiling ${MAKE_OPT} into $BUILD_NAME.exe on $BUILD_TARGET"
-
-# ----------------------------------------------------------------------
 # Configure NEMS and components
 
 # Configure NEMS
@@ -64,11 +62,15 @@ if [[ "${MAKE_OPT}" == *"CCPP=Y"* ]]; then
   COMPONENTS="CCPP,$COMPONENTS"
 fi
 
+if [[ "${MAKE_OPT}" == *"WW3=Y"* ]]; then
+  COMPONENTS="WW3,$COMPONENTS"
+fi
+
 # Make variables:
 #   COMPONENTS = list of components to build
 #   BUILD_ENV = theia.intel, wcoss_dell_p3, etc.
 #   FV3_MAKEOPT = build options to send to FV3, CCPP, and FMS
-#   TEST_BUILD_NAME = requests copying of modules.nems and 
+#   TEST_BUILD_NAME = requests copying of modules.nems and
 #      NEMS.x into the tests/ directory using the given build name.
 
 # FIXME: add -j $MAKE_THREADS once FV3 bug is fixed
