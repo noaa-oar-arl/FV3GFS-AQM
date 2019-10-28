@@ -179,7 +179,8 @@
        iopt_stc       = 1
        debug          = .false.
        nstf_name      = @[NSTF_NAME]
-       cplchm         = .true.
+       cplaqm         = .true.
+       cplchm         = .false.
        cplflx         = @[CPLFLX]
        cplwav         = @[CPLWAV]
        iau_delthrs    = 6
