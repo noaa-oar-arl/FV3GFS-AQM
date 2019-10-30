@@ -155,7 +155,7 @@
        satmedmf       = @[SATMEDMF]
        lheatstrg      = @[LHEATSTRG]
        random_clds    = .true.
-       trans_trac     = .false.
+       trans_trac     = .true.
        cnvcld         = .true.
        imfshalcnv     = 2
        imfdeepcnv     = 2

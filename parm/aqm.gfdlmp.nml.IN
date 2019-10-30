@@ -148,7 +148,7 @@
        lgfdlmprad     = @[LGFDLMPRAD]
        effr_in        = @[EFFR_IN]
        random_clds    = .false.
-       trans_trac     = .false.
+       trans_trac     = .true.
        cnvcld         = .true.
        cplaqm         = .true.
        cplchm         = .false.
