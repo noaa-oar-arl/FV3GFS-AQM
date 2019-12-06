@@ -3562,7 +3562,6 @@ test cpld_fv3_aqm_between: fv3_aqm.exe {
     coupling_interval_sec="@[DT_ATMOS]" # fv3 time step
     # - model_configure ---
     CPL='.true.'
-    CPLFLX='.true.'
 
     # Specify input files.
     filters input {
@@ -3696,7 +3695,6 @@ test cpld_fv3_gfdlmp_aqm_between: fv3_aqm.exe {
     coupling_interval_sec="@[DT_ATMOS]" # fv3 time step
     # model_configure
     CPL='.true.'
-    CPLFLX='.true.'
 
     # Specify input files.
     filters input {
