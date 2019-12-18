@@ -349,335 +349,335 @@
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASO4J"
            "longname",  "ASO4J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASO4I"
            "longname",  "ASO4I"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ANH4J"
            "longname",  "ANH4J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ANH4I"
            "longname",  "ANH4I"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ANO3J"
            "longname",  "ANO3J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ANO3I"
            "longname",  "ANO3I"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AALK1J"
            "longname",  "AALK1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AALK2J"
            "longname",  "AALK2J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AXYL1J"
            "longname",  "AXYL1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AXYL2J"
            "longname",  "AXYL2J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AXYL3J"
            "longname",  "AXYL3J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ATOL1J"
            "longname",  "ATOL1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ATOL2J"
            "longname",  "ATOL2J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ATOL3J"
            "longname",  "ATOL3J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ABNZ1J"
            "longname",  "ABNZ1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ABNZ2J"
            "longname",  "ABNZ2J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ABNZ3J"
            "longname",  "ABNZ3J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "APAH1J"
            "longname",  "APAH1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "APAH2J"
            "longname",  "APAH2J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "APAH3J"
            "longname",  "APAH3J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ATRP1J"
            "longname",  "ATRP1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ATRP2J"
            "longname",  "ATRP2J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AISO1J"
            "longname",  "AISO1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AISO2J"
            "longname",  "AISO2J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASQTJ"
            "longname",  "ASQTJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AORGCJ"
            "longname",  "AORGCJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AECJ"
            "longname",  "AECJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AECI"
            "longname",  "AECI"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AOTHRJ"
            "longname",  "AOTHRJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AOTHRI"
            "longname",  "AOTHRI"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AFEJ"
            "longname",  "AFEJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AALJ"
            "longname",  "AALJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASIJ"
            "longname",  "ASIJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ATIJ"
            "longname",  "ATIJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ACAJ"
            "longname",  "ACAJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AMGJ"
            "longname",  "AMGJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AKJ"
            "longname",  "AKJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AMNJ"
            "longname",  "AMNJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ACORS"
            "longname",  "ACORS"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASOIL"
            "longname",  "ASOIL"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "NUMATKN"
            "longname",  "NUMATKN"
-           "units",     "ppmV"
+           "units",     "num/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "NUMACC"
            "longname",  "NUMACC"
-           "units",     "ppmV"
+           "units",     "num/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "NUMCOR"
            "longname",  "NUMCOR"
-           "units",     "ppmV"
+           "units",     "num/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "SRFATKN"
            "longname",  "SRFATKN"
-           "units",     "ppmV"
+           "units",     "m2/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "SRFACC"
            "longname",  "SRFACC"
-           "units",     "ppmV"
+           "units",     "m2/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "SRFCOR"
            "longname",  "SRFCOR"
-           "units",     "ppmV"
+           "units",     "m2/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AH2OJ"
            "longname",  "AH2OJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AH2OI"
            "longname",  "AH2OI"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AH3OPJ"
            "longname",  "AH3OPJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AH3OPI"
            "longname",  "AH3OPI"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ANAJ"
            "longname",  "ANAJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ANAI"
            "longname",  "ANAI"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ACLJ"
            "longname",  "ACLJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ACLI"
            "longname",  "ACLI"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASEACAT"
            "longname",  "ASEACAT"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ACLK"
            "longname",  "ACLK"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASO4K"
            "longname",  "ASO4K"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ANH4K"
            "longname",  "ANH4K"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ANO3K"
            "longname",  "ANO3K"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AH2OK"
            "longname",  "AH2OK"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AH3OPK"
            "longname",  "AH3OPK"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AISO3J"
            "longname",  "AISO3J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AOLGAJ"
            "longname",  "AOLGAJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AOLGBJ"
            "longname",  "AOLGBJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AGLYJ"
            "longname",  "AGLYJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "APCSOJ"
            "longname",  "APCSOJ"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ALVPO1I"
            "longname",  "ALVPO1I"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASVPO1I"
            "longname",  "ASVPO1I"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASVPO2I"
            "longname",  "ASVPO2I"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ALVPO1J"
            "longname",  "ALVPO1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASVPO1J"
            "longname",  "ASVPO1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASVPO2J"
            "longname",  "ASVPO2J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASVPO3J"
            "longname",  "ASVPO3J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "AIVPO1J"
            "longname",  "AIVPO1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ALVOO1I"
            "longname",  "ALVOO1I"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ALVOO2I"
            "longname",  "ALVOO2I"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASVOO1I"
            "longname",  "ASVOO1I"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASVOO2I"
            "longname",  "ASVOO2I"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ALVOO1J"
            "longname",  "ALVOO1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ALVOO2J"
            "longname",  "ALVOO2J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASVOO1J"
            "longname",  "ASVOO1J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASVOO2J"
            "longname",  "ASVOO2J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "ASVOO3J"
            "longname",  "ASVOO3J"
-           "units",     "ppmV"
+           "units",     "ug/kg"
            "profile_type", "fixed", "surface_value=1.e-7" /
  "TRACER", "atmos_mod", "NH3"
            "longname",  "NH3"
