@@ -1,0 +1,110 @@
+################################################
+#                                              #
+#  NOAA Air Quality Model (AQM) Resource File  #
+#                                              #
+################################################
+
+#
+#  Input emissions
+#
+
+# supported file formats are: 
+#  - binary 	(Fortran unformatted)
+#  - netcdf 	(netCDF)
+#
+emissions_format: binary
+
+# emissions directory
+# <tile> is replaced with the tile number in case of multitile grids, or removed otherwise
+#
+emissions_path: /scratch1/NCEPDEV/nems/Raffaele.Montuoro/dev/aqm/data/emi_C96_CMAQ/07/tile<tile>
+
+# emissions file name
+# emissions_file: 
+
+# emissions time dependency
+# supported settings are:
+#  NetCDF only:
+#  - hourly	read data every hour
+#  - daily	read data every day
+#  - weekly	read data every 7 days
+#  - monthly	read data every calendar month
+#  Binary/NetCDF:
+#  - static     read data only at startup time
+#
+emissions_frequency: static
+
+# list of emission species
+# input emissions can be manipulated by adding multiple
+# sources/sinks to the same CMAQ species, scaled by the 
+# provided factors (positive for sources, negative for sinks).
+# For instance:
+#      
+#     NO2             0.750    no2_source_1      MOL/S
+#     NO2             0.250    no2_source_2      MOL/S
+#     NO2            -0.050    no2_sink_1        MOL/S
+#
+emissions_species::
+      AACD            1.00000  e_aacd.dat        MOL/S
+      ACET            1.00000  e_acet.dat        MOL/S
+      ACROLEIN        1.00000  e_acro.dat        MOL/S
+      ALD2            1.00000  e_ald2.dat        MOL/S
+      ALD2_PRIMARY    1.00000
+      ALDX            1.00000  e_aldx.dat        MOL/S
+      BENZ            1.00000  e_benz.dat        MOL/S
+      BUTADIENE13     1.00000  e_buta.dat        MOL/S
+      CH4             1.00000  e_ch4.dat         MOL/S
+      CL2             1.00000
+      CO              1.00000  e_co.dat          MOL/S
+      ETH             1.00000  e_eth.dat         MOL/S
+      ETHA            1.00000  e_etha.dat        MOL/S
+      ETHY            1.00000  e_ethy.dat        MOL/S
+      ETOH            1.00000  e_etoh.dat        MOL/S
+      FACD            1.00000  e_facd.dat        MOL/S
+      FORM            1.00000  e_form.dat        MOL/S
+      FORM_PRIMARY    1.00000
+      GLYXL           1.00000  e_glyx.dat        MOL/S
+      HCL             1.00000
+      HGIIGAS         1.00000
+      HGNRVA          1.00000
+      HONO            1.00000  e_hono.dat        MOL/S
+      IOLE            1.00000  e_iole.dat        MOL/S
+      ISOP            1.00000
+      KET             1.00000  e_ket.dat         MOL/S
+      MEOH            1.00000  e_meoh.dat        MOL/S
+      NAPH            1.00000  e_naph.dat        MOL/S
+      NO              1.00000  e_no.dat          MOL/S
+      NO2             1.00000  e_no2.dat         MOL/S
+      OLE             1.00000  e_ole.dat         MOL/S
+      PACD            1.00000  e_pacd.dat        MOL/S
+      PAR             1.00000  e_par.dat         MOL/S
+      PRPA            1.00000  e_prpa.dat        MOL/S
+      SESQ            1.00000
+      SOAALK          1.00000
+      SO2             1.00000  e_so2.dat         MOL/S
+      SULF            1.00000  e_sulf.dat        MOL/S
+      TERP            1.00000
+      TOL             1.00000  e_tol.dat         MOL/S
+      TOLU            1.00000  e_tolu.dat        MOL/S
+      XYLMN           1.00000  e_xyl.dat         MOL/S
+      PAL             1.00000
+      PCA             1.00000
+      PCL             1.00000
+      PEC             1.00000  e_pec.dat         G/S
+      PFE             1.00000
+      PH2O            1.00000
+      PK              1.00000
+      PMC             1.00000
+      PMG             1.00000
+      PMN             1.00000
+      PMOTHR          1.00000
+      PNA             1.00000
+      PNCOM           1.00000
+      PNH4            1.00000
+      PNO3            1.00000
+      POC             1.00000  e_poc.dat         G/S
+      PSI             1.00000
+      PSO4            1.00000
+      PTI             1.00000
+      NH3             1.00000  e_nh3.dat         MOL/S
+::

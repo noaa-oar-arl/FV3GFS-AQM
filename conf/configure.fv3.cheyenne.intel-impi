@@ -38,7 +38,7 @@ endif
 FC = mpiifort
 CC = mpiicc
 CXX = mpiicpc
-LD = mpiifort
+LD = mpiifort -mkl=sequential
 
 #########
 # flags #
@@ -51,8 +51,6 @@ OPENMP = Y
 AVX2 = Y
 HYDRO = N
 CCPP = N
-TRANSITION = N
-STATIC = N
 SION = N
 
 include       $(ESMFMKFILE)
@@ -85,7 +83,7 @@ CFLAGS := $(INCLUDE)
 FFLAGS := $(INCLUDE) -fno-alias -auto -safe-cray-ptr -save-temps -ftz -assume byterecl -nowarn -sox -align array64byte
 
 CPPDEFS += -Duse_libMPI -Duse_netCDF -DSPMD -DUSE_LOG_DIAG_FIELD_INFO  -DUSE_GFSL63 -DGFS_PHYS -Duse_WRTCOMP
-CPPDEFS += -DNEW_TAUCTMAX -DINTERNAL_FILE_NML
+CPPDEFS += -DNEW_TAUCTMAX -DINTERNAL_FILE_NML -DNO_INLINE_POST
 
 ifeq ($(HYDRO),Y)
 CPPDEFS +=
@@ -189,22 +187,13 @@ ifeq ($(CCPP),Y)
 CPPDEFS += -DCCPP
 CFLAGS += -I$(PATH_CCPP)/include
 FFLAGS += -I$(PATH_CCPP)/include
-ifeq ($(STATIC),Y)
-CPPDEFS += -DSTATIC
 LDFLAGS += -L$(PATH_CCPP)/lib -lccppphys -lccpp $(NCEPLIBS) -lxml2
-else
-LDFLAGS += -L$(PATH_CCPP)/lib -lccpp
-endif
 endif
 
 ifeq ($(SION),Y)
 CPPDEFS += -DSION
 CFLAGS += $(SIONLIB_INC)
 FFLAGS += $(SIONLIB_INC)
-endif
-
-ifeq ($(TRANSITION),Y)
-CPPDEFS += -DTRANSITION
 endif
 
 LDFLAGS += $(LIBS)

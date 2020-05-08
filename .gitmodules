@@ -1,30 +1,24 @@
-[submodule "FV3"]
-	path = FV3
-	url = gerrit:FV3
-	branch = aqm
-[submodule "ccpp/framework"]
-	path = ccpp/framework
-	url = https://github.com/NCAR/ccpp-framework
-[submodule "ccpp/physics"]
-	path = ccpp/physics
-	url = https://github.com/NCAR/ccpp-physics
 [submodule "FMS"]
 	path = FMS
-	url = https://github.com/NOAA-EMC/FMS
-	branch = GFS-FMS
-[submodule "AQM"]
-	path = AQM
-	url = gerrit:AQM
-	branch = development
-[submodule "WW3"]
-	path = WW3
-	url = https://github.com/NOAA-EMC/WW3
-	branch = develop
-[submodule "stochastic_physics"]
-	path = stochastic_physics
-	url = https://github.com/noaa-psd/stochastic_physics
-
+	url = https://github.com/rmontuoro/FMS.git
+	branch = aqm
+[submodule "FV3"]
+	path = FV3
+	url = https://github.com/rmontuoro/fv3atm.git
+	branch = aqm
 [submodule "NEMS"]
 	path = NEMS
 	url = https://github.com/rmontuoro/NEMS.git
 	branch = aqm
+[submodule "WW3"]
+	path = WW3
+	url = https://github.com/NOAA-EMC/WW3.git
+	branch = develop
+[submodule "stochastic_physics"]
+	path = stochastic_physics
+	url = https://github.com/noaa-psd/stochastic_physics
+	branch = master
+[submodule "AQM"]
+	path = AQM
+	url = gerrit:AQM
+	branch = development
