@@ -20,5 +20,5 @@
 	branch = master
 [submodule "AQM"]
 	path = AQM
-	url = gerrit:AQM
-	branch = development
+	url = https://github.com/NOAA-EMC/AQM
+	branch = develop
