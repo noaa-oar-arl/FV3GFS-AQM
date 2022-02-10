@@ -30,6 +30,8 @@ The top level directory structure groups source code and input files as follow:
 | ```parm/```       | Contains model configuration and namelist templates.|
 | ```doc/```        | Workspace for documentation. |
 
+Modified branch to account for in-canopy effects on composition/weather
+
 # Disclaimer
 
 The United States Department of Commerce (DOC) GitHub project code is provided
