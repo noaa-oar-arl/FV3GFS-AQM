@@ -20,5 +20,5 @@
 	branch = master
 [submodule "AQM"]
 	path = AQM
-	url = https://github.com/NOAA-EMC/AQM
-	branch = develop
+	url = https://github.com/noaa-oar-arl/AQM.git
+	branch = feature/rrfs_cmaq_canopy
